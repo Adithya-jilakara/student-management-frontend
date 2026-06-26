@@ -1,7 +1,12 @@
 <div class="student-container">
 
   <h2>Student List</h2>
-
+  <div class="search-box">
+  <input
+    type="text"
+    placeholder="Search by name, email, or department"
+    [(ngModel)]="searchText">
+   </div>
   <table>
 
     <thead>
@@ -19,7 +24,7 @@
 
     <tbody>
 
-      <tr *ngFor="let student of students">
+      <tr *ngFor="let student of filteredStudents">
 
         <td>{{student.id}}</td>
         <td>{{student.name}}</td>
