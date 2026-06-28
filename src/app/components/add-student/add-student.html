@@ -1,1 +1,29 @@
-<p>add-student works!</p>
+<div class="form-container">
+
+    <h2>Add Student</h2>
+
+    <form [formGroup]="studentForm" (ngSubmit)="saveStudent()">
+
+        <label>Name</label>
+        <input type="text" formControlName="name" placeholder="Enter name">
+
+
+        <label>Email</label>
+        <input type="email" formControlName="email" placeholder="Enter email">
+
+
+        <label>Department</label>
+        <input type="text" formControlName="department" placeholder="Enter department">
+
+
+        <label>Age</label>
+        <input type="number" formControlName="age" placeholder="Enter age">
+
+
+        <button type="submit">
+            Save Student
+        </button>
+
+    </form>
+
+</div>

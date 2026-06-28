@@ -1,24 +1,52 @@
 .navbar {
-  background-color: #1e293b;
-  color: white;
-  padding: 15px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 15px 40px;
+
+  background: #2563eb;
+
+  color: white;
+
 }
+
 
 .logo {
+
   font-size: 22px;
   font-weight: bold;
+
 }
 
-.nav-links a {
+
+.links a {
+
   color: white;
+
   text-decoration: none;
+
   margin-left: 25px;
-  font-size: 16px;
+
+  padding: 8px 12px;
+
+  border-radius: 5px;
+
 }
 
-.nav-links a:hover {
-  color: #38bdf8;
+
+.links a:hover {
+
+  background: white;
+  color: #2563eb;
+
+}
+
+
+.active {
+
+  background: white;
+  color: #2563eb !important;
+
 }
